@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;700;900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <title>GANAGARO - Soluciones Aduaneras</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            display: ["Work Sans"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+
+    <div data-include="includes/header.html"></div>
+
+
+    <main class="flex-grow">
+      <section class="relative flex min-h-[50vh] items-center justify-center py-12 sm:py-16 md:py-20 md:min-h-[75vh] overflow-hidden">
+        <!-- Video de fondo -->
+        <div class="absolute inset-0 w-full h-full overflow-hidden">
+          <iframe 
+            class="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
+            src="https://www.youtube.com/embed/0sKaDqXgaBk?autoplay=1&mute=1&loop=1&playlist=0sKaDqXgaBk&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
+            title="GANAGARO Background Video" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          <!-- Overlay oscuro para mejorar legibilidad del texto -->
+          <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        </div>
+        
+        <!-- Contenido principal -->
+        <div class="container mx-auto px-4 sm:px-6 text-center text-white relative z-10">
+          <h1 class="text-3xl font-black leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl">
+            Soluciones Aduaneras Sin Fronteras
+          </h1>
+          <p class="mx-auto mt-4 max-w-2xl text-sm font-light text-slate-200 sm:text-base md:text-lg px-4 drop-shadow-lg">
+            Con años de experiencia, GANAGARO ofrece soluciones aduaneras
+            confiables y eficientes. Su socio estratégico para el éxito en el
+            comercio global.
+          </p>
+          <a href="servicios.html"
+            class="mt-6 sm:mt-8 inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 sm:h-12 px-4 sm:px-6 bg-primary text-white text-sm sm:text-base font-bold leading-normal tracking-wide transition-colors hover:bg-primary/90 shadow-xl">
+            <span class="truncate">Conozca nuestros servicios</span>
+          </a>
+        </div>
+      </section>
+      <section class="py-16 sm:py-24">
+        <div class="container mx-auto px-4">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Servicios Especializados
+            </h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+              Ofrecemos una gama completa de servicios para facilitar sus
+              operaciones de comercio internacional.
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M247.42,117l-14-35A15.93,15.93,0,0,0,218.58,72H184V64a8,8,0,0,0-8-8H24A16,16,0,0,0,8,72V184a16,16,0,0,0,16,16H41a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,247.42,117ZM184,88h34.58l9.6,24H184ZM24,72H168v64H24ZM72,208a16,16,0,1,1,16-16A16,16,0,0,1,72,208Zm81-24H103a32,32,0,0,0-62,0H24V152H168v12.31A32.11,32.11,0,0,0,153,184Zm31,24a16,16,0,1,1,16-16A16,16,0,0,1,184,208Zm48-24H215a32.06,32.06,0,0,0-31-24V128h48Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Importación de Vehículos
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                Importamos vehículos de cualquier parte del mundo, asegurando
+                un proceso sin complicaciones.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Despacho de Mercancías
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                Gestionamos el despacho de sus mercancías con eficiencia y
+                cumplimiento normativo.
+              </p>
+            </div>
+            <div
+              class="flex flex-col gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-background-dark">
+              <div class="flex size-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.79a161.79,161.79,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h38.46a88.15,88.15,0,0,1,0,48H174.21a161.79,161.79,0,0,0,0-48Zm32.16-16H170.94a142.39,142.39,0,0,0-20.26-45A88.37,88.37,0,0,1,206.37,88ZM105.32,43A142.39,142.39,0,0,0,85.06,88H49.63A88.37,88.37,0,0,1,105.32,43ZM49.63,168H85.06a142.39,142.39,0,0,0,20.26,45A88.37,88.37,0,0,1,49.63,168Zm101.05,45a142.39,142.39,0,0,0,20.26-45h35.43A88.37,88.37,0,0,1,150.68,213Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">
+                Consultoría en Comercio Exterior
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400">
+                Brindamos asesoría experta para optimizar sus estrategias de
+                comercio internacional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white py-16 dark:bg-background-dark/50 sm:py-24">
+        <div class="container mx-auto px-4">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Por qué elegir GANAGARO
+            </h2>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="flex items-center gap-4 rounded-xl p-4">
+              <div
+                class="flex size-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Confianza y Experiencia
+              </h3>
+            </div>
+            <div class="flex items-center gap-4 rounded-xl p-4">
+              <div
+                class="flex size-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Agilidad y Eficiencia
+              </h3>
+            </div>
+            <div class="flex items-center gap-4 rounded-xl p-4">
+              <div
+                class="flex size-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm40-68a28,28,0,0,1-28,28h-4v8a8,8,0,0,1-16,0v-8H104a8,8,0,0,1,0-16h36a12,12,0,0,0,0-24H116a28,28,0,0,1,0-56h4V72a8,8,0,0,1,16,0v8h16a8,8,0,0,1,0,16H116a12,12,0,0,0,0,24h24A28,28,0,0,1,168,148Z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="text-base font-bold text-slate-900 dark:text-white">
+                Optimización de Costos
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Misión y Visión -->
+      <section
+        class="py-16 sm:py-24 bg-gradient-to-br from-primary/5 to-primary/10 dark:from-primary/10 dark:to-primary/5">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Nuestra Misión y Visión
+            </h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+              Comprometidos con la excelencia en soluciones aduaneras
+            </p>
+          </div>
+          <div class="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
+            <!-- Misión -->
+            <div
+              class="group relative overflow-hidden rounded-2xl bg-white dark:bg-background-dark shadow-lg hover:shadow-xl transition-all duration-300 p-8">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500">
+              </div>
+              <div class="relative">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Misión
+                  </h3>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Facilitar el comercio internacional de nuestros clientes a través de un servicio aduanero ágil,
+                  transparente y personalizado, apoyado en tecnología innovadora y un equipo altamente comprometido. Nos
+                  enfocamos en generar confianza y seguridad en cada operación, convirtiéndonos en un aliado estratégico
+                  para el crecimiento de sus negocios.
+                </p>
+              </div>
+            </div>
+
+            <!-- Visión -->
+            <div
+              class="group relative overflow-hidden rounded-2xl bg-white dark:bg-background-dark shadow-lg hover:shadow-xl transition-all duration-300 p-8">
+              <div
+                class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-500">
+              </div>
+              <div class="relative">
+                <div class="flex items-center gap-4 mb-6">
+                  <div class="flex size-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <h3 class="text-2xl font-bold text-slate-900 dark:text-white">
+                    Visión
+                  </h3>
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                  Ser la agencia aduanera más confiable y moderna de la región, reconocida por transformar la
+                  experiencia de importadores y exportadores mediante soluciones innovadoras, atención cercana y un
+                  compromiso constante con la eficiencia y la excelencia.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Videos de Despachos de Carga -->
+      <section class="py-16 sm:py-24 bg-white dark:bg-background-dark/50">
+        <div class="container mx-auto px-4">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+              Videos de Despachos de Carga
+            </h2>
+            <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">
+              Conozca de cerca nuestro proceso profesional de despacho y logística
+            </p>
+          </div>
+          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+            <!-- Video 1 -->
+            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
+                <iframe 
+                  class="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/TU_VIDEO_ID_1" 
+                  title="Proceso de Despacho Aduanero" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                  Proceso de Despacho Aduanero
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                  Observe cómo manejamos cada etapa del proceso de despacho con profesionalismo y eficiencia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
+                <iframe 
+                  class="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/TU_VIDEO_ID_2" 
+                  title="Importación de Vehículos" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                  Importación de Vehículos
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                  Desde la inspección hasta la entrega, vea nuestro proceso completo de importación vehicular.
+                </p>
+              </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
+                <iframe 
+                  class="absolute inset-0 w-full h-full"
+                  src="https://www.youtube.com/embed/TU_VIDEO_ID_3" 
+                  title="Logística de Carga Internacional" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="p-4">
+                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                  Logística de Carga Internacional
+                </h3>
+                <p class="text-sm text-slate-600 dark:text-slate-400">
+                  Conozca cómo coordinamos el traslado de mercancías a nivel internacional.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="border-t border-primary/20 bg-background-light dark:bg-background-dark">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row">
+          <div class="flex flex-wrap items-center justify-center gap-6">
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Política de Privacidad</a>
+            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
+              href="#">Términos y Condiciones</a>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">
+            © 2024 GANAGARO. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+
+<script src="js/template-loader.js"></script>
+
+</html>

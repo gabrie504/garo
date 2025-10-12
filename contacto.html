@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GANAGARO - Contacto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "foreground-light": "#1f2937",
+              "foreground-dark": "#f9fafb",
+              "card-light": "#ffffff",
+              "card-dark": "#182431",
+              "muted-light": "#6b7280",
+              "muted-dark": "#9ca3af",
+              "border-light": "#e5e7eb",
+              "border-dark": "#374151",
+            },
+            fontFamily: {
+              display: ["Work Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-foreground-light dark:text-foreground-dark"
+  >
+    <div class="flex flex-col min-h-screen">
+      <div data-include="includes/header.html"></div>
+      <main
+        class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24"
+      >
+        <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+          <div class="flex flex-col gap-12">
+            <div class="space-y-4">
+              <h2
+                class="text-4xl lg:text-5xl font-bold tracking-tighter text-foreground-light dark:text-foreground-dark"
+              >
+                Póngase en contacto
+              </h2>
+              <p class="text-lg text-muted-light dark:text-muted-dark">
+                Estamos para servirle. Complete el formulario o utilice nuestros
+                datos de contacto directo. Nos comunicaremos con usted a la
+                brevedad.
+              </p>
+            </div>
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full flex-shrink-0"
+                >
+                  <i class="fas fa-map-marker-alt text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h3
+                    class="font-bold text-foreground-light dark:text-foreground-dark"
+                  >
+                    Oficina Principal
+                  </h3>
+                  <p class="text-muted-light dark:text-muted-dark">
+                    Av. Principal 123, Ciudad, País
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full flex-shrink-0"
+                >
+                  <i class="fas fa-envelope text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h3
+                    class="font-bold text-foreground-light dark:text-foreground-dark"
+                  >
+                    Correo Electrónico
+                  </h3>
+                  <p class="text-muted-light dark:text-muted-dark">
+                    contacto@ganagaro.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div
+                  class="bg-primary/10 dark:bg-primary/20 p-3 rounded-full flex-shrink-0"
+                >
+                  <i class="fas fa-phone text-primary text-xl"></i>
+                </div>
+                <div>
+                  <h3
+                    class="font-bold text-foreground-light dark:text-foreground-dark"
+                  >
+                    Teléfonos
+                  </h3>
+                  <p class="text-muted-light dark:text-muted-dark">
+                    +1 (555) 123-4567 / +1 (555) 987-6543
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-8 border-t border-border-light dark:border-border-dark flex flex-col sm:flex-row gap-4"
+            >
+              <a
+                class="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-full text-base font-bold bg-green-500 text-white hover:bg-green-600 transition-colors"
+                href="#"
+              >
+                <i class="fab fa-whatsapp text-xl"></i>
+                Contactar por WhatsApp
+              </a>
+              <div class="flex items-center justify-center gap-4 pt-4 sm:pt-0">
+                <a
+                  class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <i class="fab fa-facebook text-2xl"></i>
+                </a>
+                <a
+                  class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a
+                  class="text-muted-light dark:text-muted-dark hover:text-primary transition-colors"
+                  href="#"
+                >
+                  <i class="fas fa-chart-bar text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-card-light dark:bg-card-dark p-8 lg:p-12 rounded-xl shadow-lg"
+          >
+            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+              <iframe
+                allowfullscreen=""
+                height="100%"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765!3d51.5283079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1689255866756!5m2!1sen!2s"
+                style="border: 0"
+                width="100%"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-4"
+          >
+            <p class="text-sm text-muted-light dark:text-muted-dark">
+              © 2024 GANAGARO. Todos los derechos reservados.
+            </p>
+            <div class="flex items-center gap-6">
+              <a
+                class="text-sm text-muted-light dark:text-muted-dark hover:text-primary"
+                href="#"
+                >Términos de Servicio</a
+              >
+              <a
+                class="text-sm text-muted-light dark:text-muted-dark hover:text-primary"
+                href="#"
+                >Política de Privacidad</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/template-loader.js"></script>
+  </body>
+</html>

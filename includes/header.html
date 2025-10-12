@@ -1,0 +1,107 @@
+<header
+  class="bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-10"
+>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center gap-3">
+        <a href="index.html">
+          <span class="sr-only">Logo</span>
+                  <img
+          class="h-12 w-auto"
+          src="assets/logo.webp"
+          alt="Logo"
+        />
+        </a>
+
+
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a
+          class="text-sm font-medium hover:text-primary transition-colors"
+          href="index.html"
+          >Inicio</a
+        >
+        <a
+          class="text-sm font-medium hover:text-primary transition-colors"
+          href="servicios.html"
+          >Servicios</a
+        >
+        <a
+          class="text-sm font-medium hover:text-primary transition-colors"
+          href="nosotros.html"
+          >Nosotros</a
+        >
+        <a class="text-sm font-medium text-primary" href="contacto.html">Contacto</a>
+      </nav>
+      <a href="consultas.html"
+        class="hidden md:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity"
+      >
+        Cotizar
+      </a>
+      <button id="mobile-menu-button" class="md:hidden text-foreground-light dark:text-foreground-dark">
+        <svg
+          id="menu-icon"
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 6h16M4 12h16m-7 6h7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></path>
+        </svg>
+        <svg
+          id="close-icon"
+          class="w-6 h-6 hidden"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 18L18 6M6 6l12 12"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full z-20 border-t border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark">
+      <nav class="px-4 py-4 space-y-3">
+        <a
+          class="block text-sm font-medium hover:text-primary transition-colors py-2"
+          href="index.html"
+          >Inicio</a
+        >
+        <a
+          class="block text-sm font-medium hover:text-primary transition-colors py-2"
+          href="servicios.html"
+          >Servicios</a
+        >
+        <a
+          class="block text-sm font-medium hover:text-primary transition-colors py-2"
+          href="nosotros.html"
+          >Nosotros</a
+        >
+        <a 
+          class="block text-sm font-medium hover:text-primary transition-colors py-2" 
+          href="contacto.html"
+          >Contacto</a
+        >
+        <a 
+          href="consultas.html"
+          class="block text-center rounded-lg py-2 px-6 bg-primary text-white text-sm font-bold hover:opacity-90 transition-opacity mt-4"
+        >
+          Cotizar
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
