@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GANAGARO - Servicios Aduaneros</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "text-light": "#101922",
+              "text-dark": "#f6f7f8",
+              "text-muted-light": "#6b7280",
+              "text-muted-dark": "#9ca3af",
+              "card-light": "#ffffff",
+              "card-dark": "#1a2734",
+              "border-light": "#e5e7eb",
+              "border-dark": "#374151",
+            },
+            fontFamily: {
+              display: ["Work Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
+  >
+    <div class="flex flex-col min-h-screen">
+
+        <div data-include="includes/header.html"></div>
+
+      <main class="flex-grow">
+        <section class="py-16 md:py-24">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h1
+                class="text-4xl md:text-5xl font-bold tracking-tight text-text-light dark:text-text-dark"
+              >
+                Nuestros Servicios
+              </h1>
+              <p
+                class="mt-4 text-lg text-text-muted-light dark:text-text-muted-dark max-w-3xl mx-auto"
+              >
+                Soluciones integrales para la importación de vehículos y
+                mercancías, garantizando profesionalismo, confianza e innovación
+                en cada paso.
+              </p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              <div
+                class="bg-card-light dark:bg-card-dark rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="p-8">
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-primary/10 p-3 rounded-lg">
+                      <svg
+                        class="h-8 w-8 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 17l6-6-6-6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h2
+                      class="text-2xl font-bold text-text-light dark:text-text-dark"
+                    >
+                      Importación de Vehículos desde Copart
+                    </h2>
+                  </div>
+                  <p
+                    class="text-text-muted-light dark:text-text-muted-dark mb-6"
+                  >
+                    Gestionamos todo el proceso de importación de su vehículo
+                    desde subastas en Copart, EE. UU. Nos encargamos de la
+                    compra, transporte, trámites aduaneros y entrega final,
+                    asegurando un servicio transparente y eficiente.
+                  </p>
+                  <a class="font-semibold text-primary hover:underline" href="contacto.html"
+                    >Conocer más →</a
+                  >
+                </div>
+              </div>
+              <div
+                class="bg-card-light dark:bg-card-dark rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="p-8">
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-primary/10 p-3 rounded-lg">
+                      <svg
+                        class="h-8 w-8 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 17l6-6-6-6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h2
+                      class="text-2xl font-bold text-text-light dark:text-text-dark"
+                    >
+                      Importación de Mercancías Internacionales
+                    </h2>
+                  </div>
+                  <p
+                    class="text-text-muted-light dark:text-text-muted-dark mb-6"
+                  >
+                    Ofrecemos un servicio completo de importación para todo tipo
+                    de mercancías. Desde la logística internacional hasta el
+                    despacho aduanero, nuestro equipo experto garantiza que sus
+                    productos lleguen a destino de forma segura y puntual.
+                  </p>
+                  <a class="font-semibold text-primary hover:underline" href="contacto.html"
+                    >Conocer más →</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark"
+      >
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p
+              class="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 md:mb-0"
+            >
+              © 2024 GANAGARO. Todos los derechos reservados.
+            </p>
+            <div class="flex space-x-6">
+              <a
+                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
+                href="#"
+                >Inicio</a
+              >
+              <a
+                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
+                href="#"
+                >Servicios</a
+              >
+              <a
+                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
+                href="#"
+                >Nosotros</a
+              >
+              <a
+                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
+                href="#"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+      <script src="js/template-loader.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GANAGARO - Contacto</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "foreground-light": "#101922",
+              "foreground-dark": "#f6f7f8",
+              "input-light": "#ffffff",
+              "input-dark": "#1b2734",
+              "border-light": "#e2e8f0",
+              "border-dark": "#334155",
+              "placeholder-light": "#64748b",
+              "placeholder-dark": "#94a3b8",
+            },
+            fontFamily: {
+              display: ["Work Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .form-input:focus {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        --tw-ring-inset: var(--tw-empty);
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: #1173d4;
+        --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+          var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+          calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+          var(--tw-shadow, 0 0 #0000);
+        border-color: #1173d4;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark"
+  >
+
+   
+    <div data-include="includes/header.html"></div>
+    <div class="flex flex-col min-h-screen">
+
+      <main
+        class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+      >
+        <div class="w-full max-w-lg space-y-8">
+          <div class="text-center">
+            <h2
+              class="text-3xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark sm:text-4xl"
+            >
+              Póngase en contacto
+            </h2>
+            <p
+              class="mt-4 text-lg leading-6 text-foreground-light/80 dark:text-foreground-dark/80"
+            >
+              Estamos aquí para ayudarle. Complete el formulario y nuestro
+              equipo se comunicará con usted a la brevedad.
+            </p>
+          </div>
+          <div
+            class="bg-background-light dark:bg-background-dark p-8 shadow-xl rounded-lg border border-border-light dark:border-border-dark"
+          >
+            <form action="#" class="space-y-6" method="POST">
+              <div>
+                <label
+                  class="block text-sm font-medium text-foreground-light dark:text-foreground-dark pb-2"
+                  for="name"
+                  >Nombre completo</label
+                >
+                <div class="mt-1">
+                  <input
+                    class="form-input w-full rounded-lg bg-input-light dark:bg-input-dark border-border-light dark:border-border-dark h-12 px-4 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark text-foreground-light dark:text-foreground-dark"
+                    id="name"
+                    name="name"
+                    placeholder="Ej. Juan Pérez"
+                    required=""
+                    type="text"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-foreground-light dark:text-foreground-dark pb-2"
+                  for="email"
+                  >Correo electrónico</label
+                >
+                <div class="mt-1">
+                  <input
+                    autocomplete="email"
+                    class="form-input w-full rounded-lg bg-input-light dark:bg-input-dark border-border-light dark:border-border-dark h-12 px-4 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark text-foreground-light dark:text-foreground-dark"
+                    id="email"
+                    name="email"
+                    placeholder="su.correo@ejemplo.com"
+                    required=""
+                    type="email"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-foreground-light dark:text-foreground-dark pb-2"
+                  for="phone"
+                  >Teléfono</label
+                >
+                <div class="mt-1">
+                  <input
+                    class="form-input w-full rounded-lg bg-input-light dark:bg-input-dark border-border-light dark:border-border-dark h-12 px-4 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark text-foreground-light dark:text-foreground-dark"
+                    id="phone"
+                    name="phone"
+                    placeholder="(55) 1234-5678"
+                    type="tel"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-foreground-light dark:text-foreground-dark pb-2"
+                  for="message"
+                  >Mensaje</label
+                >
+                <div class="mt-1">
+                  <textarea
+                    class="form-input w-full rounded-lg bg-input-light dark:bg-input-dark border-border-light dark:border-border-dark p-4 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark text-foreground-light dark:text-foreground-dark"
+                    id="message"
+                    name="message"
+                    placeholder="Escriba su consulta aquí..."
+                    required=""
+                    rows="4"
+                  ></textarea>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-opacity"
+                  type="submit"
+                >
+                  Enviar Mensaje
+                </button>
+              </div>
+            </form>
+            <div
+              class="hidden mt-6 p-4 rounded-lg bg-primary/10 text-primary border border-primary/20"
+              id="confirmation-message"
+            >
+              <p class="font-medium text-center">
+                ¡Gracias por contactarnos! Su mensaje ha sido enviado con éxito.
+                Le responderemos a la brevedad.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- the include js here -->
+       <script src="js/template-loader.js"></script>
+
+  </body>
+</html>

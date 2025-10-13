@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>GANAGARO - Proceso de Importación</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1173d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Work Sans"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        top: 64px;
+        bottom: -16px;
+        width: 2px;
+        background-color: #e5e7eb;
+        transform: translateX(-50%);
+      }
+      .dark .timeline-item::before {
+        background-color: #374151;
+      }
+      .timeline-item:last-child::before {
+        display: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-800 dark:text-slate-200"
+  >
+    <div class="relative flex min-h-screen w-full flex-col group/design-root">
+
+      <div data-include="includes/header.html"></div>
+
+      <main class="flex-1">
+        <section class="py-16 sm:py-24">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+              <h1
+                class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 dark:text-white"
+              >
+                Proceso de Importación Simplificado
+              </h1>
+              <p
+                class="mt-4 max-w-2xl mx-auto text-lg text-slate-600 dark:text-slate-400"
+              >
+                En GANAGARO, te guiamos en cada etapa de tu importación,
+                garantizando un proceso fluido, transparente y eficiente.
+              </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+              <div class="grid md:grid-cols-2 gap-x-12 gap-y-8">
+                <div class="relative timeline-item pb-8">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="flex-shrink-0 size-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center"
+                    >
+                      <svg
+                        class="h-6 w-6 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3
+                      class="text-xl font-semibold text-slate-900 dark:text-white"
+                    >
+                      1. Compra
+                    </h3>
+                  </div>
+                  <div class="ml-16 mt-2">
+                    <p class="text-slate-600 dark:text-slate-400">
+                      Selecciona y adquiere tus productos directamente con tu
+                      proveedor. Nos encargamos de verificar que toda la
+                      documentación inicial sea correcta.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative timeline-item pb-8">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="flex-shrink-0 size-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center"
+                    >
+                      <svg
+                        class="h-6 w-6 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10l2 2h8a1 1 0 001-1zM22 12h-4M22 12l-2-3m2 3l-2 3"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3
+                      class="text-xl font-semibold text-slate-900 dark:text-white"
+                    >
+                      2. Transporte
+                    </h3>
+                  </div>
+                  <div class="ml-16 mt-2">
+                    <p class="text-slate-600 dark:text-slate-400">
+                      Coordinamos la logística de transporte, ya sea marítimo,
+                      aéreo o terrestre, optimizando rutas y costos para tu
+                      mayor beneficio.
+                    </p> 
+                  </div>
+                </div>
+                <div class="relative timeline-item pb-8">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="flex-shrink-0 size-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center"
+                    >
+                      <svg
+                        class="h-6 w-6 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3
+                      class="text-xl font-semibold text-slate-900 dark:text-white"
+                    >
+                      3. Aduana
+                    </h3>
+                  </div>
+                  <div class="ml-16 mt-2">
+                    <p class="text-slate-600 dark:text-slate-400">
+                      Gestionamos todos los trámites y despachos aduaneros,
+                      asegurando el cumplimiento normativo para una liberación
+                      ágil de tu mercancía.
+                    </p>
+                  </div>
+                </div>
+                <div class="relative timeline-item pb-8">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="flex-shrink-0 size-12 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center"
+                    >
+                      <svg
+                        class="h-6 w-6 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h3
+                      class="text-xl font-semibold text-slate-900 dark:text-white"
+                    >
+                      4. Entrega
+                    </h3>
+                  </div>
+                  <div class="ml-16 mt-2">
+                    <p class="text-slate-600 dark:text-slate-400">
+                      Una vez liberada, coordinamos la entrega final de tus
+                      productos directamente en tu bodega o domicilio,
+                      completando el ciclo de importación.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white dark:bg-background-dark py-16 sm:py-24">
+          <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto">
+              <h2
+                class="text-3xl font-bold text-center text-slate-900 dark:text-white"
+              >
+                Preguntas Frecuentes
+              </h2>
+              <div class="mt-8 space-y-4">
+                <details
+                  class="group rounded-lg bg-background-light dark:bg-slate-900/50 p-4"
+                  open=""
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between font-medium text-slate-900 dark:text-white"
+                  >
+                    ¿Qué documentos necesito para iniciar?
+                    <svg
+                      class="h-5 w-5 text-slate-500 group-open:rotate-180 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="mt-2 text-slate-600 dark:text-slate-400">
+                    Para iniciar, generalmente necesitarás la factura comercial,
+                    lista de empaque, y el conocimiento de embarque (Bill of
+                    Lading). Nuestro equipo te asesorará sobre cualquier
+                    documento adicional específico para tu producto.
+                  </p>
+                </details>
+                <details
+                  class="group rounded-lg bg-background-light dark:bg-slate-900/50 p-4"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between font-medium text-slate-900 dark:text-white"
+                  >
+                    ¿Cuánto tiempo toma el proceso de importación?
+                    <svg
+                      class="h-5 w-5 text-slate-500 group-open:rotate-180 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="mt-2 text-slate-600 dark:text-slate-400">
+                    El tiempo varía según el origen, el medio de transporte y la
+                    agilidad en la aduana. Sin embargo, nos esforzamos por
+                    optimizar cada etapa para reducir los tiempos de espera y
+                    mantenerte informado constantemente.
+                  </p>
+                </details>
+                <details
+                  class="group rounded-lg bg-background-light dark:bg-slate-900/50 p-4"
+                >
+                  <summary
+                    class="flex cursor-pointer items-center justify-between font-medium text-slate-900 dark:text-white"
+                  >
+                    ¿Cómo calculan los costos y aranceles?
+                    <svg
+                      class="h-5 w-5 text-slate-500 group-open:rotate-180 transition-transform"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19 9l-7 7-7-7"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></path>
+                    </svg>
+                  </summary>
+                  <p class="mt-2 text-slate-600 dark:text-slate-400">
+                    Realizamos un análisis detallado basado en la clasificación
+                    arancelaria de tu producto, su valor, y los costos de
+                    transporte. Te proporcionamos una cotización transparente y
+                    detallada antes de iniciar el proceso.
+                  </p>
+                </details>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-slate-100 dark:bg-slate-900">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div
+            class="flex flex-col md:flex-row items-center justify-between gap-6"
+          >
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <p class="text-sm text-slate-500 dark:text-slate-400">
+              © 2024 GANAGARO. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+      <script src="js/template-loader.js"></script>
+
+  </body>
+</html>
