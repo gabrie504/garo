@@ -9,6 +9,7 @@
     onload="this.rel='stylesheet'" rel="stylesheet" />
   <title>GANAGARO - Soluciones Aduaneras</title>
   <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+ <link rel="stylesheet" href="/css/flotante.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <script>
     tailwind.config = {
@@ -36,34 +37,44 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display">
+
+    <div data-include="includes/flotante.html"></div>
+
+
   <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
 
     <div data-include="includes/header.html"></div>
 
 
     <main class="flex-grow">
-      <section class="relative flex min-h-[50vh] items-center justify-center py-12 sm:py-16 md:py-20 md:min-h-[75vh] overflow-hidden">
+      <section
+        class="relative flex min-h-[50vh] items-center justify-center py-12 sm:py-16 md:py-20 md:min-h-[75vh] overflow-hidden">
         <!-- Video de fondo -->
         <div class="absolute inset-0 w-full h-full overflow-hidden">
-          <iframe 
+          <iframe
             class="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
-            src="https://www.youtube.com/embed/0sKaDqXgaBk?autoplay=1&mute=1&loop=1&playlist=0sKaDqXgaBk&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
-            title="GANAGARO Background Video" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            src="https://www.youtube.com/embed/0sKaDqXgaBk?autoplay=1&mute=1&loop=1&playlist=0sKaDqXgaBk&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1"
+            title="GANAGARO Background Video" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
           <!-- Overlay oscuro para mejorar legibilidad del texto -->
           <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
         </div>
-        
+
         <!-- Contenido principal -->
         <div class="container mx-auto px-4 sm:px-6 text-center text-white relative z-9">
-          <h1 class="text-3xl font-black leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl">
-            Soluciones Aduaneras Sin Fronteras
+          <h1
+            class="text-3xl font-black leading-tight tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-2xl">
+            GANAGARO  
           </h1>
-          <p class="mx-auto mt-4 max-w-2xl text-sm font-light text-slate-200 sm:text-base md:text-lg px-4 drop-shadow-lg">
-            Con años de experiencia, GANAGARO ofrece soluciones aduaneras
+          <h2            
+           class="text-3xl font-black leading-tight tracking-tighter sm:text-2xl md:text-3xl lg:text-3xl drop-shadow-2xl">
+            Agencia Aduanera
+          </h2>
+          <p
+            class="mx-auto mt-4 max-w-2xl text-sm font-light text-slate-200 sm:text-base md:text-lg px-4 drop-shadow-lg">
+            Con 10 años de experiencia, GANAGARO ofrece soluciones aduaneras
             confiables y eficientes. Su socio estratégico para el éxito en el
             comercio global.
           </p>
@@ -268,7 +279,8 @@
         </div>
       </section>
       <!-- Videos de Despachos de Carga -->
-      <section class="py-16 sm:py-24 bg-white dark:bg-background-dark/50">
+    
+    <section class="py-16 sm:py-24 bg-white dark:bg-background-dark/50">
         <div class="container mx-auto px-4">
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
@@ -278,69 +290,71 @@
               Conozca de cerca nuestro proceso profesional de despacho y logística
             </p>
           </div>
-          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+          <div class="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 max-w-5xl mx-auto">
             <!-- Video 1 -->
-            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
+            <div
+              class="group flex flex-col rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-700">
+              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800 overflow-hidden">
                 <iframe 
                   class="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/TU_VIDEO_ID_1" 
-                  title="Proceso de Despacho Aduanero" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  src="https://www.youtube.com/embed/7smFS2GqANU"
+                  title="DESPACHO DE MERCADERÍA" 
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" 
                   allowfullscreen>
                 </iframe>
               </div>
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  Proceso de Despacho Aduanero
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
+              <div class="p-6 bg-white dark:bg-background-dark">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,120L47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                    Proceso de Despacho Aduanero
+                  </h3>
+                </div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                   Observe cómo manejamos cada etapa del proceso de despacho con profesionalismo y eficiencia.
                 </p>
               </div>
             </div>
 
             <!-- Video 2 -->
-            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
+            <div
+              class="group flex flex-col rounded-2xl bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-200 dark:border-slate-700">
+              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800 overflow-hidden">
                 <iframe 
                   class="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/TU_VIDEO_ID_2" 
-                  title="Importación de Vehículos" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  src="https://www.youtube.com/embed/IG7SVfeixaU?si=apJbkjF1dfbGgwGe"
+                  title="YouTube video player" 
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" 
                   allowfullscreen>
                 </iframe>
               </div>
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  Importación de Vehículos
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
+              <div class="p-6 bg-white dark:bg-background-dark">
+                <div class="flex items-center gap-3 mb-3">
+                  <div class="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                    <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M247.42,117l-14-35A15.93,15.93,0,0,0,218.58,72H184V64a8,8,0,0,0-8-8H24A16,16,0,0,0,8,72V184a16,16,0,0,0,16,16H41a32,32,0,0,0,62,0h50a32,32,0,0,0,62,0h17a16,16,0,0,0,16-16V120A7.94,7.94,0,0,0,247.42,117ZM72,208a16,16,0,1,1,16-16A16,16,0,0,1,72,208Zm112,0a16,16,0,1,1,16-16A16,16,0,0,1,184,208Z">
+                      </path>
+                    </svg>
+                  </div>
+                  <h3 class="text-xl font-bold text-slate-900 dark:text-white">
+                    Importación de Vehículos
+                  </h3>
+                </div>
+                <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                   Desde la inspección hasta la entrega, vea nuestro proceso completo de importación vehicular.
-                </p>
-              </div>
-            </div>
-
-            <!-- Video 3 -->
-            <div class="group flex flex-col rounded-xl bg-slate-100 dark:bg-background-dark shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
-              <div class="relative w-full aspect-video bg-slate-200 dark:bg-slate-800">
-                <iframe 
-                  class="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/TU_VIDEO_ID_3" 
-                  title="Logística de Carga Internacional" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-              <div class="p-4">
-                <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  Logística de Carga Internacional
-                </h3>
-                <p class="text-sm text-slate-600 dark:text-slate-400">
-                  Conozca cómo coordinamos el traslado de mercancías a nivel internacional.
                 </p>
               </div>
             </div>
@@ -348,21 +362,8 @@
         </div>
       </section>
     </main>
-    <footer class="border-t border-primary/20 bg-background-light dark:bg-background-dark">
-      <div class="container mx-auto px-4 py-8">
-        <div class="flex flex-col items-center justify-between gap-6 text-center sm:flex-row">
-          <div class="flex flex-wrap items-center justify-center gap-6">
-            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
-              href="#">Política de Privacidad</a>
-            <a class="text-sm text-slate-600 hover:text-primary dark:text-slate-400 dark:hover:text-primary"
-              href="#">Términos y Condiciones</a>
-          </div>
-          <p class="text-sm text-slate-600 dark:text-slate-400">
-            © 2024 GANAGARO. Todos los derechos reservados.
-          </p>
-        </div>
-      </div>
-    </footer>
+    <div data-include="includes/footer.html"></div>
+
   </div>
 </body>
 

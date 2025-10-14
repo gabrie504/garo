@@ -19,6 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
           console.log('Header cargado');
           setActiveNavLink();
         }
+        if (file.includes('footer.html')) {
+          console.log('footer cargado');
+          setActiveNavLink();
+        }
       })
       .catch(error => console.error('Error cargando', file, error));
     

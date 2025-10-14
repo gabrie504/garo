@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
+     <link rel="stylesheet" href="/css/flotante.css">
+
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script>
       tailwind.config = {
@@ -44,6 +46,9 @@
   <body
     class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark"
   >
+
+      <div data-include="includes/flotante.html"></div>
+
     <div class="flex flex-col min-h-screen">
 
         <div data-include="includes/header.html"></div>
@@ -130,7 +135,7 @@
                     <h2
                       class="text-2xl font-bold text-text-light dark:text-text-dark"
                     >
-                      Importación de Mercancías Internacionales
+                      Importación y Exportación de Mercancías Internacionales
                     </h2>
                   </div>
                   <p
@@ -146,45 +151,52 @@
                   >
                 </div>
               </div>
+              <div
+                class="bg-card-light dark:bg-card-dark rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300"
+              >
+                <div class="p-8">
+                  <div class="flex items-center gap-4 mb-4">
+                    <div class="bg-primary/10 p-3 rounded-lg">
+                      <svg
+                        class="h-8 w-8 text-primary"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 17l6-6-6-6"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <h2
+                      class="text-2xl font-bold text-text-light dark:text-text-dark"
+                    >
+                      Transitos Nacionales e Internacionales
+                    </h2>
+                  </div>
+                  <p
+                    class="text-text-muted-light dark:text-text-muted-dark mb-6"
+                  >
+                    <!-- add description -->
+                     Ofrecemos servicios de transito nacional e internacional para vehiculos y mercancías.
+                  </p>
+                  <a class="font-semibold text-primary hover:underline" href="contacto.html"
+                    >Conocer más →</a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
-      <footer
-        class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark"
-      >
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <p
-              class="text-sm text-text-muted-light dark:text-text-muted-dark mb-4 md:mb-0"
-            >
-              © 2024 GANAGARO. Todos los derechos reservados.
-            </p>
-            <div class="flex space-x-6">
-              <a
-                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
-                href="#"
-                >Inicio</a
-              >
-              <a
-                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
-                href="#"
-                >Servicios</a
-              >
-              <a
-                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
-                href="#"
-                >Nosotros</a
-              >
-              <a
-                class="text-sm text-text-muted-light dark:text-text-muted-dark hover:text-primary transition-colors duration-300"
-                href="#"
-                >Contacto</a
-              >
-            </div>
-          </div>
-        </div>
-      </footer>
+
+       <div data-include="includes/footer.html"></div>
+
+
     </div>
     
       <script src="js/template-loader.js"></script>

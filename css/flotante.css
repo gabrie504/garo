@@ -1,0 +1,26 @@
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(17, 115, 212, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(17, 115, 212, 0);
+  }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-btn {
+  animation: pulse-glow 2s infinite, bounce-subtle 3s ease-in-out infinite;
+}
+
+.floating-btn:hover {
+  animation: none;
+  transform: scale(1.1);
+}
