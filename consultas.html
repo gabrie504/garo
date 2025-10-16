@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("TU_PUBLIC_KEY"); // Reemplazar con tu Public Key
+      })();
+    </script>
     <script>
       tailwind.config = {
         darkMode: "class",
@@ -63,11 +70,10 @@
   <body
     class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark"
   >
+  
+  <div data-include="includes/header.html"></div>
 
-   
-    <div data-include="includes/header.html"></div>
     <div class="flex flex-col min-h-screen">
-
       <main
         class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
       >
@@ -88,7 +94,7 @@
           <div
             class="bg-background-light dark:bg-background-dark p-8 shadow-xl rounded-lg border border-border-light dark:border-border-dark"
           >
-            <form action="#" class="space-y-6" method="POST">
+            <form id="contact-form" class="space-y-6">
               <div>
                 <label
                   class="block text-sm font-medium text-foreground-light dark:text-foreground-dark pb-2"
@@ -135,7 +141,7 @@
                     class="form-input w-full rounded-lg bg-input-light dark:bg-input-dark border-border-light dark:border-border-dark h-12 px-4 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark text-foreground-light dark:text-foreground-dark"
                     id="phone"
                     name="phone"
-                    placeholder="(55) 1234-5678"
+                    placeholder="(504) 1234-5678"
                     type="tel"
                   />
                 </div>
@@ -159,28 +165,96 @@
               </div>
               <div>
                 <button
-                  class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-opacity"
+                  id="submit-btn"
+                  class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-primary hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
                   type="submit"
                 >
-                  Enviar Mensaje
+                  <span id="btn-text">Enviar Mensaje</span>
+                  <span id="btn-loading" class="hidden">Enviando...</span>
                 </button>
               </div>
             </form>
             <div
               class="hidden mt-6 p-4 rounded-lg bg-primary/10 text-primary border border-primary/20"
-              id="confirmation-message"
+              id="success-message"
             >
               <p class="font-medium text-center">
                 ¡Gracias por contactarnos! Su mensaje ha sido enviado con éxito.
                 Le responderemos a la brevedad.
               </p>
             </div>
+            <div
+              class="hidden mt-6 p-4 rounded-lg bg-red-100 text-red-700 border border-red-300"
+              id="error-message"
+            >
+              <p class="font-medium text-center">
+                Hubo un error al enviar su mensaje. Por favor, intente nuevamente.
+              </p>
+            </div>
           </div>
         </div>
       </main>
     </div>
-    <!-- the include js here -->
-       <script src="js/template-loader.js"></script>
+
+    <script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        const submitBtn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const btnLoading = document.getElementById('btn-loading');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+        
+        // Deshabilitar botón y mostrar estado de carga
+        submitBtn.disabled = true;
+        btnText.classList.add('hidden');
+        btnLoading.classList.remove('hidden');
+        
+        // Ocultar mensajes previos
+        successMessage.classList.add('hidden');
+        errorMessage.classList.add('hidden');
+        
+        // Parámetros del template
+        const templateParams = {
+          from_name: document.getElementById('name').value,
+          from_email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          message: document.getElementById('message').value,
+          to_name: 'GANAGARO', // Nombre de tu empresa
+        };
+        
+        // Enviar email usando EmailJS
+        // Reemplaza 'TU_SERVICE_ID' y 'TU_TEMPLATE_ID' con tus valores reales
+        emailjs.send('TU_SERVICE_ID', 'TU_TEMPLATE_ID', templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            
+            // Mostrar mensaje de éxito
+            successMessage.classList.remove('hidden');
+            
+            // Limpiar formulario
+            document.getElementById('contact-form').reset();
+            
+            // Restaurar botón
+            submitBtn.disabled = false;
+            btnText.classList.remove('hidden');
+            btnLoading.classList.add('hidden');
+            
+          }, function(error) {
+            console.log('FAILED...', error);
+            
+            // Mostrar mensaje de error
+            errorMessage.classList.remove('hidden');
+            
+            // Restaurar botón
+            submitBtn.disabled = false;
+            btnText.classList.remove('hidden');
+            btnLoading.classList.add('hidden');
+          });
+      });
+    </script>
+      <script src="js/template-loader.js"></script>
 
   </body>
 </html>
