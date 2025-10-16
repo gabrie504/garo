@@ -1,0 +1,25 @@
+# robots.txt para GANAGARO
+User-agent: *
+Allow: /
+Allow: /servicios.html
+Allow: /contacto.html
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+Disallow: /includes/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://gabrie504.github.io/garo/sitemap.xml
+
+# Bots específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl-delay (opcional)
+Crawl-delay: 1
