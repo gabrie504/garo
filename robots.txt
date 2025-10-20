@@ -1,18 +1,14 @@
-# robots.txt para GANAGARO
+# robots.txt para GANAGARO - www.ganagaro.com
 User-agent: *
 Allow: /
-Allow: /servicios.html
-Allow: /contacto.html
-Allow: /assets/
-Allow: /css/
-Allow: /js/
 
+# Bloqueos específicos
 Disallow: /includes/
 Disallow: /admin/
 Disallow: /*.json$
 
-# Sitemap
-Sitemap: https://gabrie504.github.io/garo/sitemap.xml
+# Sitemap correcto
+Sitemap: https://www.ganagaro.com/sitemap.xml
 
 # Bots específicos
 User-agent: Googlebot
@@ -21,5 +17,5 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Crawl-delay (opcional)
+# (Opcional) Límite de rastreo para Bing
 Crawl-delay: 1
