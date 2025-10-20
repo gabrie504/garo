@@ -1,14 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset 
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
   <url>
     <loc>https://www.ganagaro.com/</loc>
     <lastmod>2025-10-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
+
+  <!-- Página de servicios -->
   <url>
     <loc>https://www.ganagaro.com/servicios.html</loc>
     <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Página de contacto -->
+  <url>
+    <loc>https://www.ganagaro.com/contacto.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
+
+  <!-- Página de nosotros (si existe o planeas crearla) -->
+  <url>
+    <loc>https://www.ganagaro.com/nosotros.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
